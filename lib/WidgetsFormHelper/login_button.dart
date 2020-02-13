@@ -31,7 +31,7 @@ Widget appButton(
     padding: new EdgeInsets.all(btnPadding),
     child: new RaisedButton(
 //      splashColor: hexToColor("#517a20"),
-      color: Colors.blue[800],
+      color: Color(0xFF29ced1),
       shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.all(new Radius.circular(15.0))),
       onPressed: onBtnclicked,
