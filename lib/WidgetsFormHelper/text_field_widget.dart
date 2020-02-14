@@ -1,6 +1,5 @@
 import 'package:bankly_task/styles/colors.dart';
 import 'package:bankly_task/styles/text_styles.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -56,7 +55,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
           ),
           validator: (value) {
             if (value.isEmpty) {
-              return AppLocalizations.of(context).tr("error_mandatory_field");
+              return "error_mandatory_field";
             }
             return null;
           },

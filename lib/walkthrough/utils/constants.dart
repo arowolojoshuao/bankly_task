@@ -1,5 +1,5 @@
 class Constants {
-  static const String name = "Bankly Task";
+  static const String name = "bankly_task";
   static const String store = "Google Ebook\n For Everyone";
   static const String wt1 = "WELCOME";
   static const String wc1 =

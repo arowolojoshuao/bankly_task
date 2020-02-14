@@ -59,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         padding: EdgeInsets.only(top: 3.0),
                       ),
                       Text(
-                        Constants.name,
+                        "Bankly Task",
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
