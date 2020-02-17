@@ -36,8 +36,8 @@ class MyApp extends StatelessWidget {
             primaryColorBrightness: Brightness.light,
             accentColor: Colors.yellowAccent,
             primaryColor: Color(0xFF29ced1)),
-        //initialRoute: 'splash',
-        initialRoute: 'dashboard',
+        initialRoute: 'splash',
+//        initialRoute: 'dashboard',
         onGenerateRoute: Router.generateRoute,
       ),
     );
