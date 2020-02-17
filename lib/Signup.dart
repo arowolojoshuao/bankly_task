@@ -9,9 +9,8 @@ import 'package:bankly_task/login.dart';
 import 'package:bankly_task/main.dart';
 import 'package:bankly_task/models/user.dart';
 import 'package:bankly_task/services/database_helper.dart';
-import 'package:commons/commons.dart';
-import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SignupScreen extends StatefulWidget {
   @override
@@ -73,13 +72,14 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   _authenticateUser() async {
-    var result = await Connectivity().checkConnectivity();
-    if (result == ConnectivityResult.none) {
-      Tools.showSnacBar(
-        _scaffoldKey,
-        "Network Error! \nPlease check your internet connection, then try again",
-      );
-    } else if (_valid()) {
+//    var result = await Connectivity().checkConnectivity();
+//    if (result == ConnectivityResult.none) {
+//      Tools.showSnacBar(
+//        _scaffoldKey,
+//        "Network Error! \nPlease check your internet connection, then try again",
+//      );
+//    }
+    if (_valid()) {
       //_showLoading();
       email = _emailController.text.toLowerCase().trim();
       firstname = _firstnameController.text.trim();
@@ -178,7 +178,7 @@ class _SignupScreenState extends State<SignupScreen> {
   _showLoading() {
     setState(() {
       _isLoading = true;
-      waitDialog(_scaffoldKey.currentContext, duration: Duration(seconds: 1));
+      // waitDialog(_scaffoldKey.currentContext, duration: Duration(seconds: 1));
 //      showProgress(scaffoldKey.currentContext);
     });
   }

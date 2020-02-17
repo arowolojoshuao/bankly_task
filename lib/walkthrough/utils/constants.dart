@@ -24,4 +24,7 @@ class Constants {
   static final String password = 'password';
   static final String timestamp = 'date';
   static final String LOADING_CATEGORIES = 'Loading Categories';
+
+  static const NoInternet = 'Check your internet connection please';
+  static const GotInternet = 'Your internet connection is online';
 }
